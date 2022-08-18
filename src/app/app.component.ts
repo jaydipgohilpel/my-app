@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { products } from './product';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
-  log(msg: any) {
-    console.log(JSON.stringify(msg));
-  }
+  title = 'my-app-1-angular';
+  products = products;  
+    share() {
+      window.alert('The product has been shared!');
+    }
+    
+
 }
