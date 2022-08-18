@@ -7,5 +7,6 @@ import { products } from '../product';
 })
 export class ProductAlertsComponent {
 
+  
 
 }
